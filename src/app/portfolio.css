@@ -677,4 +677,18 @@
     word-break: normal;
     overflow-wrap: break-word;
   }
+  
+  /* Fix profile picture and button spacing */
+  .about-section {
+    gap: 32px;
+  }
+  
+  .profile-photo {
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+  
+  .about-buttons {
+    margin-top: 24px;
+  }
 }
