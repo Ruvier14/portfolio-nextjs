@@ -12,19 +12,22 @@ const skillsData = {
     { name: 'React', level: 90 },
     { name: 'TypeScript', level: 85 },
     { name: 'Next.js', level: 80 },
-    { name: 'Tailwind CSS', level: 95 }
+    { name: 'Tailwind CSS', level: 95 },
+    { name: 'jQuery', level: 70 }
   ],
   backend: [
     { name: 'Node.js', level: 58 },
     { name: 'Python (Django)', level: 65 },
     { name: 'Express.js', level: 42 },
-    { name: 'MySQL', level: 58 }
+    { name: 'MySQL', level: 58 },
+    { name: 'MongoDB', level: 58 }
   ],
   tools: [
     { name: 'Git', level: 92 },
     { name: 'Docker', level: 70 },
     { name: 'AWS', level: 30 },
-    { name: 'CI/CD', level: 80 }
+    { name: 'CI/CD', level: 80 },
+    { name: 'Coffee-Machine', level: 100 }
   ]
 };
 
@@ -270,6 +273,12 @@ export default function Home() {
                   <span className="skill-name">CI/CD</span>
                   <div className="skill-bar">
                     <div className="skill-progress" style={{width: '80%'}}></div>
+                  </div>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-name">Coffee-Machine</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style={{width: '100%'}}></div>
                   </div>
                 </div>
               </div>
