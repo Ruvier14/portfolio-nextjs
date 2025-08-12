@@ -29,8 +29,18 @@ const skillsData = {
 };
 
 export default function Home() {
+  const [isLoaded, setIsLoaded] = useState(false);
   const [showContactPopup, setShowContactPopup] = useState(false);
   const contactRef = useRef<HTMLSpanElement | null>(null);
+
+  useEffect(() => {
+    // Trigger fade-in animation after a short delay
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -43,7 +53,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className={`min-h-screen bg-gray-50 ${isLoaded ? 'fade-in' : 'fade-out'}`}>
       {/* Header */}
       <header className="header">
         <div className="portfolio-container">

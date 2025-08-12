@@ -802,3 +802,67 @@
     margin-top: 24px;
   }
 }
+
+/* Page Load Animations */
+.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Staggered animations for sections */
+.fade-in .header {
+  animation: slideDown 0.6s ease-out 0.2s both;
+}
+
+.fade-in .hero {
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.fade-in .about-section {
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.fade-in .skills-section {
+  animation: fadeInUp 0.8s ease-out 0.8s both;
+}
+
+.fade-in .projects-section {
+  animation: fadeInUp 0.8s ease-out 1.0s both;
+}
+
+.fade-in .experience-section {
+  animation: fadeInUp 0.8s ease-out 1.2s both;
+}
+
+.fade-in .footer {
+  animation: fadeInUp 0.8s ease-out 1.4s both;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
