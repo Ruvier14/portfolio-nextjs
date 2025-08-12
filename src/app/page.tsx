@@ -282,7 +282,7 @@ export default function Home() {
             {/* Project 1 */}
             <div className="project-card">
                               <div className="project-image">
-                  <img src="/netflixapp.png" alt="Netflix CRUD-like App Screenshot" className="project-img" />
+                  <Image src="/netflixapp.png" alt="Netflix CRUD-like App Screenshot" className="project-img" width={400} height={200} />
                 </div>
               <div className="project-content">
                 <h3 className="project-title">Netflix CRUD-like App</h3>
@@ -304,9 +304,9 @@ export default function Home() {
 
             {/* Project 2 */}
             <div className="project-card">
-              <div className="project-image">
-                <img src="/stockphony.png" alt="stockphony website"  className="project-img" />
-              </div>
+                              <div className="project-image">
+                  <Image src="/stockphony.png" alt="stockphony website" className="project-img" width={400} height={200} />
+                </div>
               <div className="project-content">
                 <h3 className="project-title">Stock Website - Stockphony</h3>
                 <p className="project-description">
@@ -326,9 +326,9 @@ export default function Home() {
 
             {/* Project 3 */}
             <div className="project-card">
-              <div className="project-image">
-                <img src="/quickstart.png" alt="Gemini API Project" />
-              </div>
+                              <div className="project-image">
+                  <Image src="/quickstart.png" alt="Gemini API Project" className="project-img" width={400} height={200} />
+                </div>
               <div className="project-content">
                 <h3 className="project-title">Gemini AI Clone - API Integration Project</h3>
                 <p className="project-description">
