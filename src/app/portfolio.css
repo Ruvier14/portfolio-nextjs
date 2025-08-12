@@ -49,7 +49,10 @@
 /* Header Styles */
 .header {
   background: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .logo-container {
@@ -734,7 +737,7 @@
   border-radius: 12px;
   padding: 12px 14px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-  z-index: 60;
+  z-index: 1000;
 }
 
 .popover-title {
