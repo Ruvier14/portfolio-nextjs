@@ -178,10 +178,31 @@
   max-width: max-content; /* prevent stretching */
 }
 
-/* Ensure buttons inside groups never stretch */
+/* Ensure action buttons stay content-width */
+button.btn,
+a.btn {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  width: auto !important;
+  max-width: none;
+  white-space: nowrap;
+  -webkit-appearance: none;
+}
+
+/* Use fit-content where supported */
+@supports (width: fit-content) {
+  button.btn,
+  a.btn {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+/* In button groups, never stretch */
 .about-buttons .btn,
 .hero-buttons .btn {
-  align-self: flex-start;
+  align-self: flex-start !important;
 }
 
 .about-buttons {
@@ -253,6 +274,8 @@
   display: grid;
   gap: 48px;
   align-items: center;
+  text-align: center;
+  
 }
 
 @media (min-width: 768px) {
