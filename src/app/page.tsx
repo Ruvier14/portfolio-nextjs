@@ -114,11 +114,11 @@ export default function Home() {
         {/* Content */}
         <div className="hero-content">
           <h1 className="hero-title">
-            Hi, I'm Rowe
+            Hi, I&apos;m Rowe
           </h1>
           <br />
           <h1 className="hero-title">
-          I'm a Full-Stack Developer
+          I&apos;m a Full-Stack Developer
           </h1>
           <p className="hero-subtitle">
             Building exceptional digital experiences with clean code and innovative solutions
