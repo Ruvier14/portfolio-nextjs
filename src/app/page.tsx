@@ -3,7 +3,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './portfolio.css';
 import Link from "next/link";
-import { FaLinkedin, FaLinkedinIn } from 'react-icons/fa6';
+import { FaLinkedin } from 'react-icons/fa6';
+import Image from 'next/image';
 
 // Skills data - easy to edit!
 const skillsData = {
@@ -140,7 +141,7 @@ export default function Home() {
           <div className="about-grid">
             <div className="about-text">
               <p>
-                I'm a dedicated software engineer with over 2 years of experience in building 
+                I&apos;m a dedicated software engineer with over 2 years of experience in building 
                 scalable web applications and solving complex technical challenges. I specialize 
                 in modern web technologies and love creating user-friendly applications that 
                 make a real difference.
@@ -148,7 +149,7 @@ export default function Home() {
               <p>
                 With a strong foundation in both frontend and backend development, I bring 
                 ideas to life through clean, maintainable code and intuitive user experiences. 
-                I'm always eager to learn new technologies and stay current with industry trends.
+                I&apos;m always eager to learn new technologies and stay current with industry trends.
               </p>
               <div className="about-buttons">
                 <button 
@@ -167,8 +168,8 @@ export default function Home() {
                 </button>
                 <button className="btn btn-tertiary">
                 <Link href="https://www.linkedin.com/in/rowe-terre-antoine-a-tampus-664963223"
-                  target="_blank"
-                  rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
                    Learn More 
@@ -181,7 +182,7 @@ export default function Home() {
             <div className="profile-photo">
               <div className="photo-placeholder">
                 <span className="placeholder-text">
-                  <img src="/profilepic.JPG" alt="Profile" className="profile-image" />
+                  <Image src="/profilepic.JPG" alt="Profile" width={320} height={400} className="profile-image" />
                 </span>
               </div>
             </div>
