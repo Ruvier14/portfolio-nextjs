@@ -178,40 +178,51 @@
   max-width: max-content; /* prevent stretching */
 }
 
-/* Ensure action buttons stay content-width */
-button.btn,
-a.btn {
-  display: inline-flex !important;
+/* Button styles */
+.btn {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  width: auto !important;
-  max-width: none;
-  white-space: nowrap;
-  -webkit-appearance: none;
-  min-width: 0 !important;
-  overflow: visible;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
 }
 
-/* Use fit-content where supported */
-@supports (width: fit-content) {
-  button.btn,
-  a.btn {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
 }
 
-/* In button groups, never stretch */
-.about-buttons .btn,
-.hero-buttons .btn {
-  align-self: flex-start !important;
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
-/* Fallback for long text */
-.btn span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.btn-secondary {
+  background: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.btn-secondary:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-tertiary {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.btn-tertiary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(240, 147, 251, 0.3);
 }
 
 .about-buttons {

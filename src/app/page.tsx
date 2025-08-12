@@ -16,7 +16,7 @@ const skillsData = {
   ],
   backend: [
     { name: 'Node.js', level: 58 },
-    { name: 'Python', level: 65 },
+    { name: 'Python (Django)', level: 65 },
     { name: 'Express.js', level: 42 },
     { name: 'MySQL', level: 58 }
   ],
@@ -320,7 +320,7 @@ export default function Home() {
                 </p>
                 <div className="experience-tags">
                   <span className="experience-tag">Bash</span>
-                  <span className="experience-tag">Python</span>
+                  <span className="experience-tag">"Python"</span>
                   <span className="experience-tag">MicrosoftSQL</span>
                   <span className="experience-tag">Excel</span>
                 </div>
