@@ -188,6 +188,8 @@ a.btn {
   max-width: none;
   white-space: nowrap;
   -webkit-appearance: none;
+  min-width: 0 !important;
+  overflow: visible;
 }
 
 /* Use fit-content where supported */
@@ -203,6 +205,13 @@ a.btn {
 .about-buttons .btn,
 .hero-buttons .btn {
   align-self: flex-start !important;
+}
+
+/* Fallback for long text */
+.btn span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .about-buttons {

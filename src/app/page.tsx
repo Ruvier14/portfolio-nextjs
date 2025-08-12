@@ -165,15 +165,16 @@ export default function Home() {
                 >
                   Download Resume
                 </button>
-                <Link
-                  href="https://www.linkedin.com/in/rowe-terre-antoine-a-tampus-664963223"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-tertiary flex items-center gap-2"
+                <button className="btn btn-tertiary">
+                <Link href="https://www.linkedin.com/in/rowe-terre-antoine-a-tampus-664963223"
+            target="_blank"
+            rel="noopener noreferrer"
+                  className="flex items-center gap-2"
                 >
-                  Learn More
-                  <FaLinkedin size={20} />
+                   Learn More 
+                   <FaLinkedin size={20}/>
                 </Link>
+                </button>
               </div>
             </div>
             
