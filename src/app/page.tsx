@@ -120,10 +120,9 @@ export default function Home() {
             Building exceptional digital experiences with clean code and innovative solutions
           </p>
           <div className="hero-buttons">
-            
-            <button className="btn btn-primary">
-              <Link href="https://github.com/Ruvier14"> View My Work </Link>
-            </button>
+            <Link href="https://github.com/Ruvier14" className="btn btn-primary">
+              View My Work
+            </Link>
           </div>
         </div>
       </section>
@@ -166,16 +165,15 @@ export default function Home() {
                 >
                   Download Resume
                 </button>
-                <button className="btn btn-tertiary">
-                <Link href="https://www.linkedin.com/in/rowe-terre-antoine-a-tampus-664963223"
-            target="_blank"
-            rel="noopener noreferrer"
-                  className="flex items-center gap-2"
+                <Link
+                  href="https://www.linkedin.com/in/rowe-terre-antoine-a-tampus-664963223"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-tertiary flex items-center gap-2"
                 >
-                   Learn More 
-                   <FaLinkedin size={20}/>
+                  Learn More
+                  <FaLinkedin size={20} />
                 </Link>
-                </button>
               </div>
             </div>
             
