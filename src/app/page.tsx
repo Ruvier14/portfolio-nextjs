@@ -114,7 +114,11 @@ export default function Home() {
         {/* Content */}
         <div className="hero-content">
           <h1 className="hero-title">
-            Software Engineer
+            Hi, I'm Rowe
+          </h1>
+          <br />
+          <h1 className="hero-title">
+          I'm a Full-Stack Developer
           </h1>
           <p className="hero-subtitle">
             Building exceptional digital experiences with clean code and innovative solutions
@@ -264,13 +268,96 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Projects Section */}
+      <section className="projects-section">
+        <div className="portfolio-container">
+          <div className="section-header text-center">
+            <h2 className="section-title">Featured Projects</h2>
+            <p className="section-subtitle">
+              A showcase of my recent work and technical achievements
+            </p>
+          </div>
+          
+          <div className="projects-grid">
+            {/* Project 1 */}
+            <div className="project-card">
+                              <div className="project-image">
+                  <img src="/netflixapp.png" alt="Netflix CRUD-like App Screenshot" className="project-img" />
+                </div>
+              <div className="project-content">
+                <h3 className="project-title">Netflix CRUD-like App</h3>
+                <p className="project-description">
+                  A full-stack Movie CRUD platform built with React, Node.js, Django and SQLLite. 
+                  Features include basic movie edits, back-end calling, edit title, descriptions, and uploads.
+                </p>
+                <div className="project-tech">
+                  <span className="tech-tag">React</span>
+                  <span className="tech-tag">Node.js</span>
+                  <span className="tech-tag">SQL-Lite</span>
+                  <span className="tech-tag">Django</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://github.com/Ruvier14/netflix-movie-app" className="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 2 */}
+            <div className="project-card">
+              <div className="project-image">
+                <img src="/stockphony.png" alt="stockphony website"  className="project-img" />
+              </div>
+              <div className="project-content">
+                <h3 className="project-title">Stock Website - Stockphony</h3>
+                <p className="project-description">
+                  A collaborative project that integrates Yahoo stock API, CRUD management updates on stocks being added, with real time stock data, user authentication, MongoDB user storage, and basic trading functions.
+                </p>
+                <div className="project-tech">
+                  <span className="tech-tag">React</span>
+                  <span className="tech-tag">Axios</span>
+                  <span className="tech-tag">BootStrap</span>
+                  <span className="tech-tag">MongoDB</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://nugrezo.github.io/stockphony/#/" className="project-link">Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="project-card">
+              <div className="project-image">
+                <img src="/quickstart.png" alt="Gemini API Project" />
+              </div>
+              <div className="project-content">
+                <h3 className="project-title">Gemini AI Clone - API Integration Project</h3>
+                <p className="project-description">
+                  A personal project learning about AI and API integration, while trying to closely clone Gemini website and also integrating LLM functionality.
+                </p>
+                <div className="project-tech">
+                  <span className="tech-tag">React</span>
+                  <span className="tech-tag">Gemini API</span>
+                  <span className="tech-tag">CSS3</span>
+                  <span className="tech-tag">Bot Scripts</span>
+                  <span className="tech-tag">Front-End</span>
+                </div>
+                <div className="project-links">
+                  <a href="#" className="project-link">Live Demo</a>
+                  <a href="#" className="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Experience Section */}
       <section id="experience" className="section experience-section">
         <div className="portfolio-container">
           <div className="text-center mb-16">
             <h2 className="section-title">Work Experience</h2>
             <p className="section-subtitle">
-              My professional journey in professional work and software development
+              My professional experience and software development journey
             </p>
           </div>
           
