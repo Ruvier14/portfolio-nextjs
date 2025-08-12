@@ -320,7 +320,7 @@ export default function Home() {
                 </p>
                 <div className="experience-tags">
                   <span className="experience-tag">Bash</span>
-                  <span className="experience-tag">"Python"</span>
+                  <span className="experience-tag">Python</span>
                   <span className="experience-tag">MicrosoftSQL</span>
                   <span className="experience-tag">Excel</span>
                 </div>
