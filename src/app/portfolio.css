@@ -294,7 +294,7 @@
   max-width: 530px;
   margin: 0 auto 64px auto;
   text-align: center;
-  text-shadow: 0.3px 0.6px 1.6px #0b0b0b;
+  text-shadow: 0.3px 0.6px 2px #fffefe;
 }
 
 /* About Section */
@@ -323,9 +323,9 @@
 .about-section .code-line-11,
 .about-section .code-line-12 {
   position: absolute;
-  color: #06f27c;
+  color: #56856d;
   font-family: 'Courier New', monospace;
-  font-size: 11px;
+  font-size: 20px;
   opacity: 0.15;
   z-index: 1;
   pointer-events: none;
@@ -333,22 +333,22 @@
   text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
   white-space: nowrap;
 }
-
+/* const dev Rowe */
 .about-section .code-line-1 {
-  top: 15%;
+  top: 20%;
   left: 8%;
   animation-delay: 0s;
 }
 
 .about-section .code-line-2 {
-  top: 65%;
-  right: 12%;
+  top: 20%;
+  right: 10%;
   animation-delay: 7s;
 }
-
-.about-section .code-line-3 {
-  top: 45%;
-  right: 18%;
+/* return awesome */
+.about-section .code-line-3 { 
+  top: 25%;
+  right: 10%;
   animation-delay: 14s;
 }
 
@@ -357,10 +357,10 @@
   right: 15%;
   animation-delay: 3s;
 }
-
+/* react - node js */
 .about-section .code-line-5 {
-  top: 65%;
-  left: 50%;
+  top: 5%;
+  left: 30%;
   animation-delay: 10s;
 }
 
@@ -375,10 +375,10 @@
   left: 5%;
   animation-delay: 2s;
 }
-
+/* high */
 .about-section .code-line-8 {
-  top: 85%;
-  right: 20%;
+  top: 10%;
+  left: 5%;
   animation-delay: 9s;
 }
 
@@ -387,11 +387,16 @@
   left: 30%;
   animation-delay: 12s;
 }
-
+/* const passsion coding */
 .about-section .code-line-10 {
-  top: 80%;
-  left: 25%;
-  animation-delay: 5s;
+  font-size: 25px;
+  color: #14b058;
+  bottom: 1%;
+  left: 54%;
+  animation-delay: 10ms;
+
+  /* Text outline */
+  -webkit-text-stroke: 0.8px black; /* width and color of the outline */
 }
 
 .about-section .code-line-11 {
@@ -399,9 +404,9 @@
   right: 38%;
   animation-delay: 15s;
 }
-
+/* bright  */
 .about-section .code-line-12 {
-  top: 80%;
+  top: 10%;
   right: 5%;
   animation-delay: 8s;
 }
