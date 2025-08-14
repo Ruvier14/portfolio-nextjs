@@ -187,7 +187,7 @@ export default function Home() {
                   className="btn btn-secondary"
                   onClick={() => {
                     const link = document.createElement('a');
-                    link.href = '/resume.pdf'; // Your resume file path
+                    link.href = '/resume_1.pdf'; // Your resume file path
                     link.download = 'Rowe_Tampus_Resume.pdf'; // Suggested filename
                     document.body.appendChild(link);
                     link.click();
