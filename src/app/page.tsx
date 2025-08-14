@@ -146,6 +146,20 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="section about-section">
+        {/* Animated Code Lines */}
+        <div className="code-line-1">const developer = "Rowe";</div>
+        <div className="code-line-2">function createPortfolio() {'{'}</div>
+        <div className="code-line-3">return &lt;Awesome /&gt;;</div>
+        <div className="code-line-4">// Full-Stack Developer</div>
+        <div className="code-line-5">const skills = ['React', 'Node.js'];</div>
+        <div className="code-line-6">export default Portfolio;</div>
+        <div className="code-line-7">const experience = 2;</div>
+        <div className="code-line-8">if (codeQuality === 'high') {'{'}</div>
+        <div className="code-line-9">console.log('Success!');</div>
+        <div className="code-line-10">const passion = 'coding';</div>
+        <div className="code-line-11">// Always learning</div>
+        <div className="code-line-12">const future = 'bright';</div>
+        
         <div className="portfolio-container">
           <div className="text-center mb-16">
             <h2 className="section-title">About Me</h2>
@@ -361,8 +375,7 @@ export default function Home() {
                   <span className="tech-tag">Front-End</span>
                 </div>
                 <div className="project-links">
-                  <a href="#" className="project-link">Live Demo</a>
-                  <a href="#" className="project-link">GitHub</a>
+                  <a href="https://github.com/Ruvier14/API-Gemini-AI-Integration-Clone" className="project-link">GitHub</a>
                 </div>
               </div>
             </div>

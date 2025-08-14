@@ -269,9 +269,17 @@
 .section-title {
   font-size: 36px;
   font-weight: bold;
-  color: #111827;
+  color: #3e3c3c;
   margin-bottom: 16px;
   text-align: center;
+/* box border */
+  border: 0.5px solid #111827;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: white;
+  display: inline-block; /* Makes the box fit the text */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
 }
 
 @media (min-width: 768px) {
@@ -281,16 +289,140 @@
 }
 
 .section-subtitle {
-  font-size: 18px;
-  color: #6b7280;
-  max-width: 512px;
+  font-size: 19px;
+  color: #ffff;
+  max-width: 530px;
   margin: 0 auto 64px auto;
   text-align: center;
+  text-shadow: 0.3px 0.6px 1.6px #0b0b0b;
 }
 
 /* About Section */
+
 .about-section {
-  background: white;
+  background: #ffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+
+/* Additional floating code elements */
+.about-section .code-line-1,
+.about-section .code-line-2,
+.about-section .code-line-3,
+.about-section .code-line-4,
+.about-section .code-line-5,
+.about-section .code-line-6,
+.about-section .code-line-7,
+.about-section .code-line-8,
+.about-section .code-line-9,
+.about-section .code-line-10,
+.about-section .code-line-11,
+.about-section .code-line-12 {
+  position: absolute;
+  color: #06f27c;
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  opacity: 0.15;
+  z-index: 1;
+  pointer-events: none;
+  animation: floatCode 15s ease-in-out infinite;
+  text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
+  white-space: nowrap;
+}
+
+.about-section .code-line-1 {
+  top: 15%;
+  left: 8%;
+  animation-delay: 0s;
+}
+
+.about-section .code-line-2 {
+  top: 65%;
+  right: 12%;
+  animation-delay: 7s;
+}
+
+.about-section .code-line-3 {
+  top: 45%;
+  right: 18%;
+  animation-delay: 14s;
+}
+
+.about-section .code-line-4 {
+  top: 25%;
+  right: 15%;
+  animation-delay: 3s;
+}
+
+.about-section .code-line-5 {
+  top: 65%;
+  left: 50%;
+  animation-delay: 10s;
+}
+
+.about-section .code-line-6 {
+  top: 35%;
+  right: 8%;
+  animation-delay: 17s;
+}
+
+.about-section .code-line-7 {
+  top: 30%;
+  left: 5%;
+  animation-delay: 2s;
+}
+
+.about-section .code-line-8 {
+  top: 85%;
+  right: 20%;
+  animation-delay: 9s;
+}
+
+.about-section .code-line-9 {
+  top: 30%;
+  left: 30%;
+  animation-delay: 12s;
+}
+
+.about-section .code-line-10 {
+  top: 80%;
+  left: 25%;
+  animation-delay: 5s;
+}
+
+.about-section .code-line-11 {
+  top: 20%;
+  right: 38%;
+  animation-delay: 15s;
+}
+
+.about-section .code-line-12 {
+  top: 80%;
+  right: 5%;
+  animation-delay: 8s;
+}
+
+@keyframes floatCode {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-20px) rotate(2deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-10px) rotate(-1deg);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translateY(-15px) rotate(1deg);
+    opacity: 0.6;
+  }
 }
 
 .about-grid {
@@ -309,7 +441,7 @@
 
 .about-text p {
   font-size: 18px;
-  color: #374151;
+  color: #272828b5;
   margin-bottom: 24px;
   line-height: 1.7;
 }
@@ -376,7 +508,9 @@
 
 /* Skills Section */
 .skills-section {
-  background: #f9fafb;
+  background: #dfe1e3;
+  background-image: url('/developer.png');
+  background-size: 90%;
 }
 
 .skills-grid {
