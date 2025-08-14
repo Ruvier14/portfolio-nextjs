@@ -147,18 +147,18 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="section about-section">
         {/* Animated Code Lines */}
-        <div className="code-line-1">const developer = "Rowe";</div>
+        <div className="code-line-1">const developer = &quot;Rowe&quot;;</div>
         <div className="code-line-2">function createPortfolio() {'{'}</div>
         <div className="code-line-3">return &lt;Awesome /&gt;;</div>
-        <div className="code-line-4">// Full-Stack Developer</div>
-        <div className="code-line-5">const skills = ['React', 'Node.js'];</div>
+        <div className="code-line-4">{/* Full-Stack Developer */}</div>
+        <div className="code-line-5">const skills = [&apos;React&apos;, &apos;Node.js&apos;];</div>
         <div className="code-line-6">export default Portfolio;</div>
         <div className="code-line-7">const experience = 2;</div>
-        <div className="code-line-8">if (codeQuality === 'high') {'{'}</div>
-        <div className="code-line-9">console.log('Success!');</div>
-        <div className="code-line-10">const passion = 'coding';</div>
-        <div className="code-line-11">// Always learning</div>
-        <div className="code-line-12">const future = 'bright';</div>
+        <div className="code-line-8">if (codeQuality === &apos;high&apos;) {'{'}</div>
+        <div className="code-line-9">console.log(&apos;Success!&apos;);</div>
+        <div className="code-line-10">const passion = &apos;coding&apos;;</div>
+        <div className="code-line-11">{/* Always learning */}</div>
+        <div className="code-line-12">const future = &apos;bright&apos;;</div>
         
         <div className="portfolio-container">
           <div className="text-center mb-16">
