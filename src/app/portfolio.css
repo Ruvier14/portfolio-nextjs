@@ -349,7 +349,7 @@
 .about-section .code-line-3 { 
   top: 25%;
   right: 10%;
-  animation-delay: 14s;
+  animation-delay: 10s;
 }
 
 .about-section .code-line-4 {
@@ -367,7 +367,7 @@
 .about-section .code-line-6 {
   top: 35%;
   right: 8%;
-  animation-delay: 17s;
+  animation-delay: 10s;
 }
 
 .about-section .code-line-7 {
@@ -381,11 +381,11 @@
   left: 5%;
   animation-delay: 9s;
 }
-
+/* const log success */
 .about-section .code-line-9 {
-  top: 30%;
-  left: 30%;
-  animation-delay: 12s;
+  top: 35%;
+  left: 40%;
+  animation-delay: 10s;
 }
 /* const passsion coding */
 .about-section .code-line-10 {
