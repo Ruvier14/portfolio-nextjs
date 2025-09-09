@@ -396,10 +396,7 @@ export default function Home() {
           <div className="space-y-12">
             {/* Experience 1 */}
             <div className="experience-item">
-              <div className="experience-header">
-                <div className="experience-date">
-                  Jan 2025 -  April 2025
-                </div>
+              <div className="experience-header"> 
                 <h3 className="experience-title">Product Engineer</h3>
                 <p className="experience-company">Relentless Returns - FinTech Company</p>
               </div>
@@ -425,9 +422,6 @@ export default function Home() {
             {/* Experience 2 */}
             <div className="experience-item">
               <div className="experience-header">
-                <div className="experience-date secondary">
-                  2019 - 2021
-                </div>
                 <h3 className="experience-title">Business Analyst/Automation</h3>
                 <p className="experience-company">Rose Industries</p>
               </div>
@@ -449,9 +443,6 @@ export default function Home() {
             {/* Experience 3 */}
             <div className="experience-item">
               <div className="experience-header">
-                <div className="experience-date secondary">
-                  2019 - 2020
-                </div>
                 <h3 className="experience-title">Customer Service / Item Distributor</h3>
                 <p className="experience-company">Military Commisary AAFES</p>
               </div>
