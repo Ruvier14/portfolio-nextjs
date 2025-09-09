@@ -290,9 +290,9 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="skill-item">
-                  <span className="skill-name">Coffee-Machine</span>
+                  <span className="skill-name">C#/.NET</span>
                   <div className="skill-bar">
-                    <div className="skill-progress" style={{width: '100%'}}></div>
+                    <div className="skill-progress" style={{width: '40%'}}></div>
                   </div>
                 </div>
               </div>
