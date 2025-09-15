@@ -187,7 +187,7 @@ export default function Home() {
                   className="btn btn-secondary"
                   onClick={() => {
                     const link = document.createElement('a');
-                    link.href = '/resume_1.pdf'; // Your resume file path
+                    link.href = '/RT_Resume.pdf'; // Your resume file path
                     link.download = 'Rowe_Tampus_Resume.pdf'; // Suggested filename
                     document.body.appendChild(link);
                     link.click();
@@ -376,6 +376,28 @@ export default function Home() {
                 </div>
                 <div className="project-links">
                   <a href="https://github.com/Ruvier14/API-Gemini-AI-Integration-Clone" className="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 4 */}
+            <div className="project-card">
+                              <div className="project-image">
+                  <Image src="/notesimg.png" alt="Notes App Web" className="project-img" width={400} height={200} />
+                </div>
+              <div className="project-content">
+                <h3 className="project-title">Note Taking MERN Stack App</h3>
+                <p className="project-description">
+                  A basic note taking app built with good fundamentals of using MERN stack. Features include editing, deleting instance of notes, and adding new notes with nice UI design. *Still in development*
+                </p>
+                <div className="project-tech">
+                  <span className="tech-tag">React</span>
+                  <span className="tech-tag">Express</span>
+                  <span className="tech-tag">Nextjs</span>
+                  <span className="tech-tag">MongoDB</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://github.com/Ruvier14/mern-notes-app" className="project-link">GitHub</a>
                 </div>
               </div>
             </div>
