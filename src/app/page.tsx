@@ -131,7 +131,7 @@ export default function Home() {
           </h1>
           <br />
           <h1 className="hero-title">
-          I&apos;m a Full-Stack Developer
+          I&apos;m a Software Engineer
           </h1>
           <p className="hero-subtitle">
             Building exceptional digital experiences with clean code and innovative solutions
@@ -377,6 +377,8 @@ export default function Home() {
                 <div className="project-links">
                   <a href="https://github.com/Ruvier14/API-Gemini-AI-Integration-Clone" className="project-link">GitHub</a>
                 </div>
+      
+                
               </div>
             </div>
 
@@ -398,7 +400,9 @@ export default function Home() {
                 </div>
                 <div className="project-links">
                   <a href="https://github.com/Ruvier14/mern-notes-app" className="project-link">GitHub</a>
+                  <a href="https://mern-notes-app-fe.onrender.com/" className="project-link">Live Demo</a>
                 </div>
+                
               </div>
             </div>
           </div>
