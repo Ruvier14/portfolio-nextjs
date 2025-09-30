@@ -430,6 +430,28 @@ export default function Home() {
                 
               </div>
             </div>
+
+            {/* Project 6 */}
+            <div className="project-card">
+                              <div className="project-image">
+                  <Image src="/javaSnake.png" alt="Java Snake Game" className="project-img" width={400} height={200} />
+                </div>
+              <div className="project-content">
+                <h3 className="project-title">Java Snake Game - Personal Project</h3>
+                <p className="project-description">
+                Java Snake Game – A classic Snake game built with Java Swing. The game features smooth movement, random apple generation, collision detection, score tracking, and dynamic growth mechanics. Implemented using object-oriented design,
+                JPanel for rendering, and Timer for real-time updates.                </p>
+                <div className="project-tech">
+                  <span className="tech-tag">Java</span>
+                  <span className="tech-tag">Java Swing</span>
+                  <span className="tech-tag">JPanel</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://github.com/Ruvier14/SnakeGame.java/tree/main/Gamepanel_frames" target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
+                </div>
+                
+              </div>
+            </div>
           </div>
         </div>
       </section>
