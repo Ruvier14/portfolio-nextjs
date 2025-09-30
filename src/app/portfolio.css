@@ -509,9 +509,9 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: -28px;
+  bottom: -70px;
   font-family: 'Courier New', monospace;
-  font-size: 20px;
+  font-size: 25px;
   color: #14b058;
   opacity: 0.6;
   text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
@@ -522,7 +522,7 @@
 
 @media (max-width: 768px) {
   .profile-photo::after {
-    bottom: -22px;
+    bottom: -30px;
     font-size: 18px;
   }
 }
