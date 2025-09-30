@@ -352,7 +352,7 @@ export default function Home() {
                   <span className="tech-tag">MongoDB</span>
                 </div>
                 <div className="project-links">
-                  <a href="https://nugrezo.github.io/stockphony/#/" className="project-link">Live Demo</a>
+                  <a href="https://nugrezo.github.io/stockphony/#/" target="_blank" rel="noopener noreferrer" className="project-link">Live Demo</a>
                 </div>
               </div>
             </div>
@@ -375,7 +375,7 @@ export default function Home() {
                   <span className="tech-tag">Front-End</span>
                 </div>
                 <div className="project-links">
-                  <a href="https://github.com/Ruvier14/API-Gemini-AI-Integration-Clone" className="project-link">GitHub</a>
+                  <a href="https://github.com/Ruvier14/API-Gemini-AI-Integration-Clone" target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
                 </div>
       
                 
@@ -399,8 +399,8 @@ export default function Home() {
                   <span className="tech-tag">MongoDB</span>
                 </div>
                 <div className="project-links">
-                  <a href="https://github.com/Ruvier14/mern-notes-app" className="project-link">GitHub</a>
-                  <a href="https://mern-notes-app-fe.onrender.com/" className="project-link">Live Demo</a>
+                  <a href="https://github.com/Ruvier14/mern-notes-app" target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
+                  <a href="https://mern-notes-app-fe.onrender.com/" target="_blank" rel="noopener noreferrer" className="project-link">Live Demo</a>
                 </div>
                 
               </div>
@@ -447,6 +447,29 @@ export default function Home() {
 
             {/* Experience 2 */}
             <div className="experience-item">
+              <div className="experience-header"> 
+                <h3 className="experience-title">Freelance Software Developer</h3>
+                <p className="experience-company">Self-Employed</p>
+              </div>
+              <div className="experience-content">
+                <p className="experience-description">
+                Freelance software developer with experience building full-stack web applications using React, Next.js, Node.js, and Laravel. I specialize in creating scalable, user-friendly solutions and have worked on projects
+                ranging from APIs to cloud-hosted apps for startups and small teams.
+                </p>
+                <div className="experience-tags">
+                  <span className="experience-tag">React</span>
+                  <span className="experience-tag">Node.js</span>
+                  <span className="experience-tag">Next.js</span>
+                  <span className="experience-tag">FullStack</span>
+                  <span className="experience-tag">Backend Engineering</span>
+                  <span className="experience-tag">Tailwind CSS</span>
+                  <span className="experience-tag">Design</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Experience 3 */}
+            <div className="experience-item">
               <div className="experience-header">
                 <h3 className="experience-title">Business Analyst/Automation</h3>
                 <p className="experience-company">Rose Industries</p>
@@ -466,7 +489,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Experience 3 */}
+            {/* Experience 4 */}
             <div className="experience-item">
               <div className="experience-header">
                 <h3 className="experience-title">Customer Service / Item Distributor</h3>
@@ -492,7 +515,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="footer">
         <div className="portfolio-container text-center">
-          <p className="footer-text">&copy; 2025 Rowe Tampus. All rights reserved.</p>
+          <p className="footer-text">&copy; {new Date().getFullYear()} Rowe Tampus. All rights reserved.</p>
           <div className="footer-links">
             <a href="https://github.com/Ruvier14" className="footer-link">GitHub</a>
             <a href="https://www.linkedin.com/in/rowe-terre-antoine-a-tampus-664963223" className="footer-link">LinkedIn</a>
