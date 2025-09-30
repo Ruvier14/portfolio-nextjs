@@ -388,16 +388,7 @@
   animation-delay: 10s;
 }
 /* const passsion coding */
-.about-section .code-line-10 {
-  font-size: 25px;
-  color: #14b058;
-  bottom: 1%;
-  left: 54%;
-  animation-delay: 10ms;
-
-  /* Text outline */
-  -webkit-text-stroke: 0.8px black; /* width and color of the outline */
-}
+.about-section .code-line-10 { display: none; }
 
 .about-section .code-line-11 {
   top: 20%;
@@ -480,6 +471,7 @@
   display: flex;
   justify-content: center;
   margin-right: 100px;
+  position: relative;
 }
 
 .photo-placeholder {
@@ -509,6 +501,47 @@
   border-radius: 50%;
   border: 4px solid white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Centered label under the profile image */
+.profile-photo::after {
+  content: "const passion = 'coding'";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -28px;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  color: #14b058;
+  opacity: 0.6;
+  text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
+  -webkit-text-stroke: 0.8px black;
+  white-space: nowrap;
+  animation: float-label 7s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .profile-photo::after {
+    bottom: -22px;
+    font-size: 18px;
+  }
+}
+
+/* Gentle floating animation that preserves horizontal centering */
+@keyframes float-label {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -8px);
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .profile-photo::after {
+    animation: none;
+  }
 }
 
 /* Skills Section */
