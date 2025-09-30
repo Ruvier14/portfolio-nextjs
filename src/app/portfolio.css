@@ -516,6 +516,10 @@
   background: #dfe1e3;
   background-image: url('/developer.png');
   background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .skills-grid {

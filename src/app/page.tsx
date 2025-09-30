@@ -390,7 +390,7 @@ export default function Home() {
               <div className="project-content">
                 <h3 className="project-title">Note Taking MERN Stack App</h3>
                 <p className="project-description">
-                  A basic note taking app built with good fundamentals of using MERN stack. Features include editing, deleting instance of notes, and adding new notes with nice UI design. *Still in development*
+                  A basic Fullstack note taking app built with good fundamentals of using MERN stack. Features include editing, deleting instance of notes, and adding new notes with nice UI design. *Still in development*
                 </p>
                 <div className="project-tech">
                   <span className="tech-tag">React</span>
@@ -401,6 +401,31 @@ export default function Home() {
                 <div className="project-links">
                   <a href="https://github.com/Ruvier14/mern-notes-app" target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
                   <a href="https://mern-notes-app-fe.onrender.com/" target="_blank" rel="noopener noreferrer" className="project-link">Live Demo</a>
+                </div>
+                
+              </div>
+            </div>
+
+            {/* Project 5 */}
+            <div className="project-card">
+                              <div className="project-image">
+                  <Image src="/middleWareImg.png" alt="Middleware Engineering" className="project-img" width={400} height={200} />
+                </div>
+              <div className="project-content">
+                <h3 className="project-title">Middleware Engineering Project - Book Auth</h3>
+                <p className="project-description">
+                A Book Exchange web app where users can list, borrow, and trade books securely. Built with Node.js, Express, JWT, and MongoDB, it highlights skills in backend development, authentication, and API architecture.
+                </p>
+                <div className="project-tech">
+                  <span className="tech-tag">Node.js</span>
+                  <span className="tech-tag">Express.js</span>
+                  <span className="tech-tag">MongoDB Atlas</span>
+                  <span className="tech-tag">JWT - JSON WEB TOKEN</span>
+                  <span className="tech-tag">CORS Middleware</span>
+                  <span className="tech-tag">Bcrypt.js</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://github.com/Ruvier14/MiddlewareProject_Book_Authentication" target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
                 </div>
                 
               </div>
@@ -517,9 +542,9 @@ export default function Home() {
         <div className="portfolio-container text-center">
           <p className="footer-text">&copy; {new Date().getFullYear()} Rowe Tampus. All rights reserved.</p>
           <div className="footer-links">
-            <a href="https://github.com/Ruvier14" className="footer-link">GitHub</a>
-            <a href="https://www.linkedin.com/in/rowe-terre-antoine-a-tampus-664963223" className="footer-link">LinkedIn</a>
-            <a href="mailto:ruvier20144@gmail.com" className="footer-link">Email</a>
+            <a href="https://github.com/Ruvier14" target="_blank" rel="noopener noreferrer" className="footer-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/rowe-terre-antoine-a-tampus-664963223" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
+            <a href="mailto:ruvier20144@gmail.com" target="_blank" rel="noopener noreferrer" className="footer-link">Email</a>
           </div>
         </div>
       </footer>
