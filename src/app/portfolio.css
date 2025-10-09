@@ -305,6 +305,8 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  /* Prevent absolutely-positioned floating text from creating horizontal scroll */
+  overflow: clip;
 }
 
 
@@ -524,6 +526,10 @@
   .profile-photo::after {
     bottom: -30px;
     font-size: 18px;
+    /* Ensure the label never causes horizontal overflow */
+    max-width: calc(100vw - 32px);
+    white-space: normal;
+    text-align: center;
   }
 }
 
@@ -842,6 +848,11 @@
   
   .experience-item {
     gap: 24px;
+  }
+
+  /* Hide floating code lines on small screens to avoid overflow */
+  .about-section [class^="code-line-"] {
+    display: none;
   }
 }
 
