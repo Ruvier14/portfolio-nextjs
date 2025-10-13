@@ -64,7 +64,7 @@
 .logo-placeholder {
   width: 40px;
   height: 40px;
-  background: #2563eb;
+  background: #461070;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -115,7 +115,7 @@
 .hero-background {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, #2563eb, #7c3aed);
+  background: linear-gradient(to right, #24253b, #4a11ac);
 }
 
 .hero-content {
@@ -269,14 +269,15 @@
 .section-title {
   font-size: 36px;
   font-weight: bold;
-  color: #3e3c3c;
+  color: #ebebeb;
   margin-bottom: 16px;
   text-align: center;
 /* box border */
-  border: 0.5px solid #111827;
+  border: 0.5px solid #e4e4e4;
   padding: 12px 24px;
   border-radius: 10px;
-  background: white;
+  background: linear-gradient(200deg, #24253b, #4a11ac);
+  
   display: inline-block; /* Makes the box fit the text */
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 
@@ -290,11 +291,13 @@
 
 .section-subtitle {
   font-size: 19px;
-  color: #424040;
-  max-width: 530px;
+  color: #fbfbfb;
+  max-width: 600px;
+  background: linear-gradient(200deg, #334155 0%, #321f37 100%);
+  border-radius: 10px;
   margin: 0 auto 64px auto;
   text-align: center;
-  text-shadow: 0.3px 0.6px 2px #fffefe;
+  text-shadow: 0.3px 0.6px 2px #1c1c1c;
 }
 
 /* About Section */
@@ -307,6 +310,7 @@
   position: relative;
   /* Prevent absolutely-positioned floating text from creating horizontal scroll */
   overflow: clip;
+  border: 1px solid #334155; /* match section border */
 }
 
 
@@ -557,8 +561,7 @@
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
-  border-top: 1px solid #e5e7eb;
-  border-bottom: 1px solid #e5e7eb;
+  overflow: clip;
 }
 
 .skills-grid {
@@ -1057,7 +1060,7 @@
   background-image: url('/portfolioweb.png');
   background-size: 80% auto;
   padding-top: 100px;
-  background-position: 50% 40%;
+  background-position: 57% 40%;
   background-repeat: no-repeat;
   /* light or dark wash to improve text contrast */
   z-index: 0;
@@ -1102,10 +1105,10 @@
 }
 
 .hobby-card {
-  background: white;
+  background: #0f172a;
   border-radius: 14px;
   padding: 22px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
   transform-style: preserve-3d;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   position: relative;
@@ -1114,7 +1117,7 @@
 
 .hobby-card:hover {
   transform: translateY(-6px) rotateX(2deg) rotateY(-2deg);
-  box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.45);
 }
 
 .hobby-card::after {
@@ -1122,7 +1125,7 @@
   position: absolute;
   inset: 0;
   border-radius: 14px;
-  background: radial-gradient(600px circle at var(--mx, 50%) var(--my, 50%), rgba(99,102,241,0.12), transparent 40%);
+  background: radial-gradient(600px circle at var(--mx, 50%) var(--my, 50%), rgba(99,102,241,0.18), transparent 40%);
   opacity: 0;
   transition: opacity 0.2s ease;
   pointer-events: none;
@@ -1138,10 +1141,10 @@
   border-radius: 12px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
-  color: white;
+  background: linear-gradient(135deg, #334155 0%, #1f2937 100%);
+  color: #ffffff;
   font-size: 28px;
-  box-shadow: 0 10px 18px rgba(99,102,241,0.25);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.35);
   margin-bottom: 14px;
   transform: translateZ(10px);
 }
@@ -1149,12 +1152,12 @@
 .hobby-title {
   font-size: 18px;
   font-weight: 700;
-  color: #111827;
+  color: #ffffff;
   margin-bottom: 6px;
 }
 
 .hobby-desc {
-  color: #4b5563;
+  color: #ffffff;
   line-height: 1.6;
   white-space: pre-line; /* honor \n in text */
 }
@@ -1182,6 +1185,12 @@
   margin: 0 auto;
 }
 
+/* around the whole section */
+#hobbies.hobbies-section {
+  border: 1px solid #334155;   /* color */       /* optional */
+  overflow: clip;              /* avoids bg/children bleeding corners */
+}
+
 .carousel-viewport {
   overflow: hidden;
   padding: 0 48px; /* spacing for controls */
@@ -1202,8 +1211,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(17, 24, 39, 0.6);
-  color: white;
+  background: rgba(255, 255, 255, 0.14);
+  color: #060e1e;
   border: none;
   width: 80px;
   height: 50px;
@@ -1216,7 +1225,7 @@
 }
 
 .carousel-control:hover {
-  background: rgba(17, 24, 39, 0.8);
+  background: rgba(0, 0, 0, 0.24);
 }
 
 .carousel-control.prev { left: 12px; }
@@ -1233,13 +1242,13 @@
   width: 8px;
   height: 8px;
   border-radius: 9999px;
-  background: #c7d2fe;
+  background: #475569;
   border: none;
   cursor: pointer;
 }
 
 .carousel-dot.active {
-  background: #4f46e5;
+  background: #ffffff;
 }
 
 /* Constrain card width and slightly reduce sizing */
