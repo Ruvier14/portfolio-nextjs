@@ -35,6 +35,31 @@ export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showContactPopup, setShowContactPopup] = useState(false);
   const contactRef = useRef<HTMLSpanElement | null>(null);
+  const [currentHobbyIndex, setCurrentHobbyIndex] = useState(0);
+  const carouselIntervalRef = useRef<number | null>(null);
+
+  const hobbies = [
+    {
+      icon: '💪',
+      title: 'Fitness',
+      desc: 'Weight training, calisthenics, and staying active to keep energy high.'
+    },
+    {
+      icon: '🎮',
+      title: 'Gaming',
+      desc: 'Casual gaming and strategy to unwind and have fun. \n I play Genshin Impact, Apex, Valorant, and Chess!'
+    },
+    {
+      icon: '📚',
+      title: 'Reading',
+      desc: 'Tech, psychology, and business books to broaden perspective.'
+    },
+    {
+      icon: '🌎',
+      title: 'Travel & Outdoors',
+      desc: 'Exploring new places, hiking trails, and nature photography.'
+    }
+  ];
 
   useEffect(() => {
     // Trigger fade-in animation after a short delay
@@ -55,6 +80,21 @@ export default function Home() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  // Autoplay for hobbies carousel
+  useEffect(() => {
+    if (carouselIntervalRef.current) {
+      window.clearInterval(carouselIntervalRef.current);
+    }
+    carouselIntervalRef.current = window.setInterval(() => {
+      setCurrentHobbyIndex((prev) => (prev + 1) % hobbies.length);
+    }, 4000);
+    return () => {
+      if (carouselIntervalRef.current) {
+        window.clearInterval(carouselIntervalRef.current);
+      }
+    };
+  }, [hobbies.length]);
+
   return (
     <div className={`min-h-screen bg-gray-50 ${isLoaded ? 'fade-in' : 'fade-out'}`}>
       {/* Header */}
@@ -71,6 +111,7 @@ export default function Home() {
               <a href="#about" className="nav-link">About</a>
               <a href="#skills" className="nav-link">Skills</a>
               <a href="#experience" className="nav-link">Experience</a>
+              <a href="#hobbies" className="nav-link">Hobbies</a>
               <span className="popover" ref={contactRef}>
                 <button
                   type="button"
@@ -296,6 +337,80 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hobbies Section */}
+      <section id="hobbies" className="section hobbies-section">
+        <div className="portfolio-container">
+          <div className="text-center mb-16">
+            <h2 className="section-title">Hobbies & Interests</h2>
+            <p className="section-subtitle">
+              What I enjoy when I’m not coding
+            </p>
+          </div>
+
+          <div
+            className="hobbies-carousel"
+            onMouseEnter={() => {
+              if (carouselIntervalRef.current) window.clearInterval(carouselIntervalRef.current);
+            }}
+            onMouseLeave={() => {
+              carouselIntervalRef.current = window.setInterval(() => {
+                setCurrentHobbyIndex((prev) => (prev + 1) % hobbies.length);
+              }, 4000);
+            }}
+          >
+            <button
+              type="button"
+              aria-label="Previous hobby"
+              className="carousel-control prev"
+              onClick={() => setCurrentHobbyIndex((prev) => (prev - 1 + hobbies.length) % hobbies.length)}
+            >
+              ‹
+            </button>
+
+            <div className="carousel-viewport" aria-roledescription="carousel">
+              <div
+                className="carousel-track"
+                style={{ transform: `translateX(-${currentHobbyIndex * 100}%)` }}
+              >
+                {hobbies.map((hobby, idx) => (
+                  <div className="carousel-slide" aria-hidden={idx !== currentHobbyIndex} key={hobby.title}>
+                    <div className="hobby-card">
+                      <div className="hobby-icon">
+                        <span aria-hidden="true">{hobby.icon}</span>
+                      </div>
+                      <h3 className="hobby-title">{hobby.title}</h3>
+                      <p className="hobby-desc">{hobby.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <button
+              type="button"
+              aria-label="Next hobby"
+              className="carousel-control next"
+              onClick={() => setCurrentHobbyIndex((prev) => (prev + 1) % hobbies.length)}
+            >
+              ›
+            </button>
+
+            <div className="carousel-dots" role="tablist" aria-label="Hobbies">
+              {hobbies.map((hobby, idx) => (
+                <button
+                  key={hobby.title}
+                  role="tab"
+                  aria-selected={currentHobbyIndex === idx}
+                  aria-label={`Show ${hobby.title}`}
+                  className={`carousel-dot ${currentHobbyIndex === idx ? 'active' : ''}`}
+                  onClick={() => setCurrentHobbyIndex(idx)}
+                />
+              ))}
             </div>
           </div>
         </div>
