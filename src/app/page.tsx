@@ -228,7 +228,7 @@ export default function Home() {
                   className="btn btn-secondary"
                   onClick={() => {
                     const link = document.createElement('a');
-                    link.href = '/RT_Resume.pdf'; // Your resume file path
+                    link.href = '/RT_Resume_R.pdf'; // Your resume file path
                     link.download = 'Rowe_Tampus_Resume.pdf'; // Suggested filename
                     document.body.appendChild(link);
                     link.click();
@@ -546,7 +546,33 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Project 6 */}
+             {/* Project 6 */}
+             <div className="project-card">
+                              <div className="project-image">
+                  <Image src="/weatherapp.jpg" alt="Weather App" className="project-img" width={400} height={200} />
+                </div>
+              <div className="project-content">
+                <h3 className="project-title">Weather App - API Integration Project || OpenWeather API</h3>
+                <p className="project-description">
+                 A simple weather app that fetches weather data from the OpenWeather API and displays it in a user-friendly interface. 
+                 Features include fetching weather data by city name, displaying weather conditions, temperature, and humidity. *Still in development*
+                </p>
+                <div className="project-tech">
+                  <span className="tech-tag">Next.js</span>
+                  <span className="tech-tag">Typescript</span>
+                  <span className="tech-tag">React 19</span>
+                  <span className="tech-tag">Tailwind CSS</span>
+                  <span className="tech-tag">Axios</span>
+                  <span className="tech-tag">Linting</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://github.com/Ruvier14/React-WeatherProject" target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
+                </div>
+                
+              </div>
+            </div>
+
+            {/* Project 7 */}
             <div className="project-card">
                               <div className="project-image">
                   <Image src="/javaSnake.png" alt="Java Snake Game" className="project-img" width={400} height={200} />
