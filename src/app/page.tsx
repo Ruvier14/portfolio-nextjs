@@ -47,7 +47,7 @@ export default function Home() {
     {
       icon: '🎮',
       title: 'Gaming',
-      desc: 'Casual gaming and strategy to unwind and have fun. \n I play Genshin Impact, Apex, Valorant, and Chess!'
+      desc: 'Casual gaming and strategy to unwind and have fun.'
     },
     {
       icon: '📚',

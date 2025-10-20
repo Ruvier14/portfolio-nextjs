@@ -290,6 +290,18 @@
   }
 }
 
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
+
 .section-subtitle {
   font-size: 19px;
   color: #e8e8e8;
@@ -1044,6 +1056,13 @@
 .hobbies-section {
   position: relative;
   overflow: hidden;
+  padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+  .hobbies-section {
+    padding: 40px 0;
+  }
 }
 
 .hobbies-section {
@@ -1280,9 +1299,93 @@
   text-align: center;
 }
 
+/* Mobile Optimizations for Hobbies Section */
 @media (max-width: 768px) {
-  .hobbies-carousel { max-width: 100%; }
-  .carousel-viewport { padding: 0 36px; }
+  .hobbies-carousel { 
+    max-width: 100%; 
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .carousel-viewport { 
+    padding: 0 20px; 
+  }
+  
+  .hobby-card {
+    max-width: 100%;
+    padding: 16px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hobby-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 0 auto 8px;
+  }
+  
+  .hobby-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .hobby-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4b5563;
+  }
+  
+  .carousel-control {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+  
+  .carousel-control.prev { left: 4px; }
+  .carousel-control.next { right: 4px; }
+  
+  .carousel-dots {
+    margin-top: 12px;
+  }
+  
+  .carousel-dot {
+    width: 6px;
+    height: 6px;
+  }
+  
+  /* Improve touch targets for mobile */
+  .carousel-control {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-dot {
+    min-width: 12px;
+    min-height: 12px;
+    padding: 4px;
+    background: transparent;
+    border: 2px solid #475569;
+    cursor: pointer;
+  }
+  
+  .carousel-dot.active {
+    background: #ffffff;
+    border-color: #ffffff;
+  }
+  
+  /* Maintain full zoom background on mobile */
+  .hobbies-section::before {
+    background-size: cover;
+    background-position: center;
+    padding-top: 0;
+  }
 }
 
 @keyframes slideDown {
