@@ -1199,6 +1199,26 @@
   white-space: pre-line; /* honor \n in text */
 }
 
+/* Carousel-specific description styling */
+.carousel-slide .hobby-desc {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Ensure consistent spacing for carousel cards */
+.carousel-slide .hobby-icon {
+  flex-shrink: 0;
+  margin-bottom: 12px;
+}
+
+.carousel-slide .hobby-title {
+  flex-shrink: 0;
+  margin-bottom: 12px;
+}
+
 /* Staggered entrance */
 .hobbies-grid .hobby-card {
   opacity: 0;
@@ -1248,6 +1268,8 @@
   min-width: 100%;
   display: grid;
   place-items: center; /* center slide content */
+  height: 300px; /* Fixed height for consistent carousel sizing */
+  align-content: center;
 }
 
 .carousel-control {
@@ -1294,11 +1316,16 @@
   background: #ffffff;
 }
 
-/* Constrain card width and slightly reduce sizing */
-.hobby-card {
+/* Constrain card width and slightly reduce sizing for carousel */
+.carousel-slide .hobby-card {
   max-width: 720px;
   padding: 18px;
   text-align: center;
+  height: 100%; /* Take full height of parent slide */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hobby-icon {
@@ -1348,13 +1375,22 @@
     padding: 0 48px; 
   }
   
-  .hobby-card {
+  .carousel-slide {
+    height: 280px; /* Slightly smaller for mobile */
+  }
+  
+  .carousel-slide .hobby-card {
     max-width: 100%;
     padding: 16px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .hobby-icon {
@@ -1374,6 +1410,14 @@
     font-size: 14px;
     line-height: 1.5;
     color: #4b5563;
+  }
+  
+  .carousel-slide .hobby-desc {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
   
   .carousel-control {

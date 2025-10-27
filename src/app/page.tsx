@@ -42,7 +42,7 @@ export default function Home() {
     {
       icon: '💪',
       title: 'Fitness',
-      desc: 'Like lifting weights and sports like soccer, v-ball and basketball.'
+      desc: 'Lifting weights and healthy lifestyle.'
     },
     {
       icon: '🎮',
