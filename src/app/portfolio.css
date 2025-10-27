@@ -293,12 +293,13 @@
 @media (max-width: 768px) {
   .section-title {
     font-size: 28px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
   
   .section-subtitle {
     font-size: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+    padding: 10px 16px;
   }
 }
 
@@ -871,6 +872,21 @@
   .about-section [class^="code-line-"] {
     display: none;
   }
+  
+  /* Prevent horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Ensure projects section has proper spacing */
+  .projects-section {
+    padding: 60px 0;
+  }
+  
+  /* Fix footer spacing */
+  .footer {
+    padding: 40px 0;
+  }
 }
 
 /* Tooltip styles */
@@ -1217,6 +1233,12 @@
   padding: 0 48px; /* spacing for controls */
 }
 
+@media (max-width: 768px) {
+  .carousel-viewport {
+    padding: 0 52px; /* More spacing for mobile controls */
+  }
+}
+
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease;
@@ -1301,14 +1323,29 @@
 
 /* Mobile Optimizations for Hobbies Section */
 @media (max-width: 768px) {
+  .hobbies-section {
+    padding: 40px 0 60px 0;
+    min-height: auto;
+  }
+  
+  /* Ensure text-center mb-16 has proper spacing */
+  .hobbies-section .text-center.mb-16 {
+    margin-bottom: 32px !important;
+  }
+  
+  /* Fix spacing for all section headers on mobile */
+  .section .text-center.mb-16 {
+    margin-bottom: 32px;
+  }
+  
   .hobbies-carousel { 
     max-width: 100%; 
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 8px;
   }
   
   .carousel-viewport { 
-    padding: 0 20px; 
+    padding: 0 48px; 
   }
   
   .hobby-card {
@@ -1340,13 +1377,23 @@
   }
   
   .carousel-control {
-    width: 32px;
-    height: 32px;
-    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .carousel-control.prev { left: 4px; }
-  .carousel-control.next { right: 4px; }
+  .carousel-control.prev { 
+    left: 8px; 
+  }
+  
+  .carousel-control.next { 
+    right: 8px; 
+  }
   
   .carousel-dots {
     margin-top: 12px;
@@ -1355,18 +1402,6 @@
   .carousel-dot {
     width: 6px;
     height: 6px;
-  }
-  
-  /* Improve touch targets for mobile */
-  .carousel-control {
-    min-width: 44px;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .carousel-dot {
     min-width: 12px;
     min-height: 12px;
     padding: 4px;

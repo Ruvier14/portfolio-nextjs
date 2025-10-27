@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   description: "Portfolio of Rowe Tampus, a passionate software engineer with expertise in full-stack development, React, Next.js, and modern web technologies.",
   keywords: ["software engineer", "portfolio", "React", "Next.js", "TypeScript", "full-stack developer"],
   authors: [{ name: "Rowe Tampus" }],
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   openGraph: {
     title: "Rowe Tampus - Software Engineer Portfolio",
     description: "Portfolio of Rowe Tampus, a passionate software engineer with expertise in full-stack development.",
